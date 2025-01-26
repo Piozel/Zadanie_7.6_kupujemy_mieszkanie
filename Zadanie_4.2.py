@@ -14,16 +14,12 @@
 
 
 
-def palidromy(word):
-    paliword = ""
-    for letter in word[::-1]:  # Use `word` (the function parameter)
-        paliword += letter  # Build the reversed string
-
-    if paliword == word:
+def palidromyy(word):
+    if word == word[::-1]:
         print(f'"{word}" is a palindrome')
     else:
         print(f'"{word}" is NOT a palindrome')
 
 
 words = "kajak"
-palidromy(words)
+palidromyy(words)
