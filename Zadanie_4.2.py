@@ -14,12 +14,12 @@
 
 
 
-def palidromyy(word):
-    if word == word[::-1]:
-        print(f'"{word}" is a palindrome')
-    else:
-        print(f'"{word}" is NOT a palindrome')
-
+def is_palindrome(word):
+    return word == word[::-1] # przyrównanie słowa ze słowem od tyłu
 
 words = "kajak"
-palidromyy(words)
+
+if is_palindrome(words):  # Sprawdzenie zwróconej wartości
+    print(f'"{words}" is a palindrome')
+else:
+    print(f'"{words}" is NOT a palindrome')
