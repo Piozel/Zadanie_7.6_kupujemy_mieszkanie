@@ -27,3 +27,18 @@ def palidromy(word):
 words = "kajaki"
 palidromy(words)
 
+
+
+def palidromy(word):
+    paliword = ""
+    for letter in word[::-1]:  # Use `word` (the function parameter)
+        paliword += letter  # Build the reversed string
+
+    if paliword == word:
+        print(f'"{word}" is a palindrome')
+    else:
+        print(f'"{word}" is NOT a palindrome')
+
+
+words = "kajak"
+palidromy(words)
