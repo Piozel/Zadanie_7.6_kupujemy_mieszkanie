@@ -13,36 +13,6 @@
 # Do zadania dodaj krótką dokumentację i umieść je w zdalnym repozytorium. Link prześlij Mentorowi.
 
 
-def palidromy(word):
-    paliword = ""
-    for letter in reversed(word):  # Use `word` (the function parameter)
-        paliword += letter  # Build the reversed string
-
-    if paliword == word:
-        print(f'"{word}" is a palindrome')
-    else:
-        print(f'"{word}" is NOT a palindrome')
-
-
-words = "kajaki"
-palidromy(words)
-
-
-
-def palidromy(word):
-    paliword = ""
-    for letter in word[::-1]:  # Use `word` (the function parameter)
-        paliword += letter  # Build the reversed string
-
-    if paliword == word:
-        print(f'"{word}" is a palindrome')
-    else:
-        print(f'"{word}" is NOT a palindrome')
-
-
-words = "kajak"
-palidromy(words)
-
 
 def palidromyy(word):
     if word == word[::-1]:
@@ -52,4 +22,6 @@ def palidromyy(word):
 
 
 words = "kajak"
+=======
+>>>>>>> ed5403cccd61618f213b7cfe17a8dd8b9e4d9ec3
 palidromyy(words)
